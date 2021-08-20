@@ -1,0 +1,101 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  font-family: "Courier New", Courier, monospace;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(235, 195, 64);
+}
+
+.about h1 {
+  margin-top: 100px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cont-about {
+  padding-left: auto;
+  padding-right: auto;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+}
+.cont-about p {
+  margin: 10px;
+  padding: 15px;
+  background-color: #a4dbde;
+}
+
+.contact {
+  margin-top: 100px;
+}
+
+/* https://stackoverflow.com/questions/42963187/trying-to-have-header-and-unordered-list-on-same-line */
+.header ul li {
+  list-style: none;
+  display: inline;
+  margin: 0px 20px 0px 0px;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+  transition: 0.3s ease box-shadow;
+}
+.header li:hover {
+  box-shadow: 0px 0px 10px 0 #000000;
+}
+
+/*
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+*/
+
+.home {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.home .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+.home .logo {
+  margin: 2px;
+  height: 150px;
+}
+.home h1 {
+}
+
+.cont-services {
+  padding-left: auto;
+  padding-right: auto;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(235, 195, 64);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
