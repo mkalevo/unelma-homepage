@@ -1,0 +1,211 @@
+.app {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .header {
+    display: grid;
+    font-family: "Courier New", Courier, monospace;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    background-color: rgb(235, 195, 64);
+  }
+  
+  .about h1 {
+    margin-top: 100px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes texttrans{
+      0% {color: white}
+      100% {color: black}
+  }
+  .contact .phone-number {
+      animation: texttrans;
+      animation-duration: 2s;
+  }
+  
+  .cont-about {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .cont-about p {
+    font-size: 1.5rem;
+    line-height: 2.5;
+  }
+  .contact{
+      padding-top: 100px;
+  }
+  .contact-divs {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* contact screen mobile*/
+  @media screen and (max-width: 850px) {
+    .contact-divs{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .cont-line{
+        width: 400px;
+        height: 1px;
+        border: solid 1px black;
+        margin: 30px auto 30px auto;
+    }
+    .mailform .outlined-basic{
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .mailform div{
+        margin-top: 8px;
+        width: 300px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.2rem;
+    }
+    .mailform Button{
+        font-size: 1.3rem;
+        margin-top: 10px;
+        width: 200px;
+        color: black;
+        background-color: yellow;
+    }
+    }
+  
+    /* Contact screen on desktop */
+    @media screen and (min-width: 850px) {
+        .mailform {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+          }
+          .cont-left{
+            padding-right: 100px;
+        }
+        .cont-line{
+            width: 1px; 
+            height: 400px; 
+            border: solid 1px black;
+          }
+          .mailform div{
+            margin-top: 8px;
+            width: 110%;
+        }
+    }
+  
+
+  
+  /* https://stackoverflow.com/questions/42963187/trying-to-have-header-and-unordered-list-on-same-line */
+  .header ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px 0px 0px;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+  }
+  .header li:hover {
+    box-shadow: 0px 0px 10px 0 #000000;
+  }
+  
+  /*
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  */
+  
+  .home {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .home .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+  .home .logo {
+    margin: 2px;
+    height: 150px;
+  }
+  .home h1 {
+  }
+  .services {
+    margin-top: 80px;
+    display: grid;
+  }
+  .cont-services-top {
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+  .cont-services-top div {
+    border: solid 2px black;
+  }
+  .cont-services-top .logo{
+    grid-row-end: auto;
+  }
+  .cont-services {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4vh;
+    margin: 40px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+  .cont-services .cont-service-full {
+    border: 2px solid yellow;
+    background-color: rgba(235, 195, 64, 0.6);
+    box-shadow: 0 5px 18px rgba(55,56,104,0.8);
+    transition: 0.3s;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 5px;
+  }
+  .cont-services .cont-service-full:hover{
+    background-color: rgba(235, 195, 64, 0.8);
+    transform: scale(1.05);
+  }
+  .cont-services .p-bg-color{
+    background-color: #a4dbde;
+    margin: 0px 10px 10px 10px;
+    border-radius: 5px;
+  }
+
+  .cont-services p {
+    border-radius: 2px;
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 10px 20px 10px 20px;
+  }
+  
+  .footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(235, 195, 64);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
